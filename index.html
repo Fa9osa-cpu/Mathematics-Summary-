@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملخص الرياضيات - 1 ثانوي</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --text: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #22c55e;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text);
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: var(--primary);
+            font-size: 1.4rem;
+        }
+
+        header p {
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+
+        .section-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .section-card h2 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding-right: 5px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: var(--accent);
+        }
+
+        .formula {
+            background-color: #0f172a;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            direction: ltr;
+            display: inline-block;
+            margin: 5px 0;
+            color: #e2e8f0;
+            border: 1px solid var(--border);
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid var(--border);
+            padding: 8px;
+        }
+
+        th {
+            background-color: #0f172a;
+            color: var(--primary);
+        }
+
+        .quiz-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--primary);
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .quiz-box h3 {
+            color: var(--primary);
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .option-btn {
+            display: block;
+            width: 100%;
+            background-color: #0f172a;
+            color: var(--text);
+            border: 1px solid var(--border);
+            padding: 10px;
+            margin: 6px 0;
+            border-radius: 6px;
+            text-align: right;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .option-btn:active {
+            background-color: var(--border);
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+            color: var(--primary);
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ملخص الرياضيات - الفصل الأول</h1>
+        <p>جذع مشترك علوم وتكنولوجيا</p>
+    </header>
+
+    <!-- 1. الأعداد والحساب -->
+    <div class="section-card">
+        <h2>1. الأعداد والحساب</h2>
+        <ul>
+            <li><strong>المجموعات:</strong> N ⊂ Z ⊂ D ⊂ Q ⊂ R</li>
+            <li><strong>PGCD:</strong> العوامل المشتركة بأصغر أس.</li>
+            <li><strong>PPCM:</strong> العوامل المشتركة والغير مشتركة بأكبر أس.</li>
+            <li><strong>القيمة المطلقة والمسافة:</strong></li>
+        </ul>
+        <div class="formula">|x - a| ≤ r  ⇔  a - r ≤ x ≤ a + r</div>
+    </div>
+
+    <!-- 2. عموميات على الدوال -->
+    <div class="section-card">
+        <h2>2. عموميات على الدوال</h2>
+        <ul>
+            <li><strong>الدالة الزوجية:</strong> f(-x) = f(x) (متناظرة بالنسبة لمحيور التراتيب)</li>
+            <li><strong>الدالة الفردية:</strong> f(-x) = -f(x) (متناظرة بالنسبة للمبدأ O)</li>
+            <li><strong>اتجاه التغير:</strong> x1 < x2 
+                <br>← متزايدة إذا حافظت على الترتيب f(x1) < f(x2)
+                <br>← متناقصة إذا عكست الترتيب f(x1) > f(x2)
+            </li>
+        </ul>
+    </div>
+
+    <!-- 3. الدوال المرجعية -->
+    <div class="section-card">
+        <h2>3. الدوال المرجعية</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>الدالة</th>
+                    <th>العبارة</th>
+                    <th>الشفعية</th>
+                    <th>المنحنى</th>
+                </tr>
+                <tr>
+                    <td>المربع</td>
+                    <td>f(x) = x²</td>
+                    <td>زوجية</td>
+                    <td>قطع مكافئ</td>
+                </tr>
+                <tr>
+                    <td>المقلوب</td>
+                    <td>f(x) = 1/x</td>
+                    <td>فردية</td>
+                    <td>قطع زائد</td>
+                </tr>
+                <tr>
+                    <td>الجذر</td>
+                    <td>f(x) = √x</td>
+                    <td>لا شفعية</td>
+                    <td>منحنى يتزايد</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 4. الحساب الشعاعي -->
+    <div class="section-card">
+        <h2>4. الحساب الشعاعي والهندسة</h2>
+        <ul>
+            <li><strong>مركبات الشعاع:</strong> AB(xB - xA , yB - yA)</li>
+            <li><strong>منتصف قطعة:</strong> I( (xA+xB)/2 , (yA+yB)/2 )</li>
+            <li><strong>شرط الارتباط الخطي (u(x,y) و v(x',y')):</strong></li>
+        </ul>
+        <div class="formula">x · y' - x' · y = 0</div>
+    </div>
+
+    <!-- اختبار سريع -->
+    <div class="quiz-box">
+        <h3>اختبر معلوماتك السريعة:</h3>
+        <p id="question">ما هي شفعية الدالة f(x) = x² ؟</p>
+        <button class="option-btn" onclick="checkAnswer(true)">دالة زوجية</button>
+        <button class="option-btn" onclick="checkAnswer(false)">دالة فردية</button>
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p>تم التطوير بواسطة: عبدوش 🔥 | Spck Editor</p>
+    </footer>
+
+    <script>
+        function checkAnswer(isCorrect) {
+            const resultDiv = document.getElementById('result');
+            if (isCorrect) {
+                resultDiv.style.color = '#22c55e';
+                resultDiv.innerText = 'إجابة صحيحة! ممتاز 👏';
+            } else {
+                resultDiv.style.color = '#ef4444';
+                resultDiv.innerText = 'إجابة خاطئة! الدالة x² زوجية لأن f(-x) = f(x).';
+            }
+        }
+    </script>
+</body>
+</html>
